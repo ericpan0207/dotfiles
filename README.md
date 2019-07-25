@@ -18,3 +18,7 @@ Enter into a vim environment and run `:PlugInstall`
 git clone https://github.com/ericpan0207/dotfiles.git
 cd dotfiles
 ./install.sh
+```
+
+## Screenshot
+![Screenshot] (https://raw.githubusercontent.com/ericpan0207/dotfiles/master/vimrc.PNG)
