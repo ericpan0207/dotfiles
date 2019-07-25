@@ -21,4 +21,4 @@ cd dotfiles
 ```
 
 ## Screenshot
-![Screenshot] (https://raw.githubusercontent.com/ericpan0207/dotfiles/master/vimrc.PNG)
+![Screenshot](https://raw.githubusercontent.com/ericpan0207/dotfiles/master/vimrc.PNG)
