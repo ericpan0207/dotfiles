@@ -39,11 +39,11 @@ echo -n "${reset}"
 
 # Create symlinks
 echo -e "\nCreating symlinks in home directory."
-for file in $files; do
+for file in $files; do    
     ln -snfv $DOTFILES/$file ~/.$file
 done
 
-git submodule update --nit --recursive
+git submodule update --init --recursive
 
 echo -e "\nInstalling vim plugins..."
 vim -u NONE ./vim/vim-plug.vim +source\ % +PlugInstall +qall
