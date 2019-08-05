@@ -31,7 +31,7 @@ set mouse=a                             " Enable mouse
 set number                              " Line numbers
 
 set directory^=$HOME/.vim/swapfiles//   " Place all swp files in the same location
-set updatetime=300                      " After 300 ms, swap file will be saved to disk 
+set updatetime=300                      " After 300 ms, swap file will be saved to disk
 set autoread                            " Auto reload files changed outside of vim
 
 " Colorscheme
@@ -44,23 +44,41 @@ let g:airline#extensions#tabline#enabled = 1                    " Allow top stat
 let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'    " Remove part of the status line
 let g:airline_section_z = '%3p%% %3l/%L:%3v'                    " Format status line
 
+" ======================================================================================
 " Mappings
+" ======================================================================================
 let mapleader = "\<Space>"
+" Save and close file
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>c :close<CR>
+" Pane split and navigation
 nnoremap <Leader>t :split 
 nnoremap <Leader>v :vsplit 
 nnoremap <Leader>h <C-W>h
 nnoremap <Leader>l <C-W>l
 nnoremap <Leader>j <C-W>j
 nnoremap <Leader>k <C-W>k
+" Return to previous location
+nnoremap <Leader>g <C-O>
+" Make a pane full screen
 nnoremap tt :tab split<CR>
-nnoremap l w
-nnoremap h b
+" Navigation
+nnoremap f w
+nnoremap s b
+nnoremap ; $
+nnoremap y ^
+" Leave insert mode quickly
 inoremap jk <Esc>
-:map j gj
-:map k gk
+" Auto close brackets
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap ) )<del>
+inoremap [ []<left>
+inoremap ] ]<del>
+inoremap {; {<CR>};<ESC>O
+inoremap {<CR> {<CR>}<ESC>O
 
 " Autocompletes
 function! Tab_Or_Complete()
