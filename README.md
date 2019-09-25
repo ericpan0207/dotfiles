@@ -3,8 +3,8 @@
 ## Installation
 
 #### Manual Install
-* Copy 'vim/vim-plug.vim' to ~/.vim/
-* Copy 'vim/.vimrc' to ~/
+* Copy `vim/vim-plug.vim` to `~/.vim/`
+* Copy `vim/.vimrc` to `~/`
 * Install [auto-pairs](https://github.com/jiangmiao/auto-pairs):
 * Install [vim-plug](https://github.com/junegunn/vim-plug):
 * Enter into a vim environment and run `:PlugInstall`
