@@ -6,6 +6,7 @@
 echo "Installing dotfiles."
 wget -P ~/.vim/ https://raw.githubusercontent.com/ericpan0207/dotfiles/master/vim/vim-plug.vim
 wget -P ~/ https://raw.githubusercontent.com/ericpan0207/dotfiles/master/vim/.vimrc
+wget -P ~/.vim/plugin https://raw.githubusercontent.com/jiangmiao/auto-pairs/master/plugin/auto-pairs.vim
 wget -P ~/.vim/autoload/ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 echo -e "\nInstalling vim plugins..."

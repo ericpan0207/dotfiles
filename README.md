@@ -3,15 +3,11 @@
 ## Installation
 
 #### Manual Install
-```shell
-wget -P ~/.vim/ https://raw.githubusercontent.com/ericpan0207/dotfiles/master/vim/vim-plug.vim
-wget -P ~/ https://raw.githubusercontent.com/ericpan0207/dotfiles/master/vim/.vimrc
-```
-Install [vim-plug](https://github.com/junegunn/vim-plug):
-```shell
-wget -P ~/.vim/autoload/ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
-Enter into a vim environment and run `:PlugInstall`
+* Copy 'vim/vim-plug.vim' to ~/.vim/
+* Copy 'vim/.vimrc' to ~/
+* Install [auto-pairs](https://github.com/jiangmiao/auto-pairs):
+* Install [vim-plug](https://github.com/junegunn/vim-plug):
+* Enter into a vim environment and run `:PlugInstall`
 
 #### Auto Install
 ```shell
