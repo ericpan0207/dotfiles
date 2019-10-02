@@ -13,6 +13,7 @@
 ```shell
 git clone https://github.com/ericpan0207/dotfiles.git
 cd dotfiles
+chmod +x install.sh
 ./install.sh
 ```
 
