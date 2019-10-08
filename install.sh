@@ -12,4 +12,9 @@ wget -P ~/.vim/autoload/ https://raw.githubusercontent.com/junegunn/vim-plug/mas
 echo -e "\nInstalling vim plugins..."
 vim ~/.vim/vim-plug.vim +source\ % +PlugInstall +qall
 
+cwd=$(pwd)
+cd ~/.vim/plugged/youcompleteme/
+./install.py --clangd-completer --java-completer
+cd $cwd
+
 echo -e "\n...Finished installing"

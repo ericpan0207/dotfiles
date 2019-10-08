@@ -5,9 +5,10 @@
 #### Manual Install
 * Copy `vim/vim-plug.vim` to `~/.vim/`
 * Copy `vim/.vimrc` to `~/`
-* Install [auto-pairs](https://github.com/jiangmiao/auto-pairs):
-* Install [vim-plug](https://github.com/junegunn/vim-plug):
+* Install [auto-pairs](https://github.com/jiangmiao/auto-pairs)
+* Install [vim-plug](https://github.com/junegunn/vim-plug)
 * Enter into a vim environment and run `:PlugInstall`
+* Install [youcompleteme](https://github.com/ycm-core/YouCompleteMe) by going to `~/,vim/plugged/youcompleteme` and running `./install.py` with your language support preferences
 
 #### Auto Install
 ```shell

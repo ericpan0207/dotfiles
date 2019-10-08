@@ -44,6 +44,8 @@ let g:airline#extensions#tabline#enabled = 1                    " Allow top stat
 let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'    " Remove part of the status line
 let g:airline_section_z = '%3p%% %3l/%L:%3v'                    " Format status line
 
+let g:ycm_autoclose_preview_window_after_completion = 1
+
 " ======================================================================================
 " Mappings
 " ======================================================================================
@@ -66,29 +68,13 @@ nnoremap tt :tab split<CR>
 " Navigation
 nnoremap f w
 nnoremap s b
-nnoremap ; $
+nnoremap ; $a
 nnoremap y ^
+" File search bindings
+nnoremap ' :Buffers<CR>
+nnoremap <Leader>f :Files<CR>
 " Leave insert mode quickly
 inoremap jk <Esc>
-" Auto close brackets
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap ) )<del>
-inoremap [ []<left>
-inoremap ] ]<del>
-inoremap {; {<CR>};<ESC>O
-inoremap {<CR> {<CR>}<ESC>O
-
-" Autocompletes
-function! Tab_Or_Complete()
-    if col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w'
-        return "\<C-N>"
-    else
-        return "\<Tab>"
-    endif
-endfunction
-inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
 
 " Search and Replace in visual mode
 function! Get_Visual_Selection()
