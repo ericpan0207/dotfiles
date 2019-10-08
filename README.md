@@ -18,7 +18,7 @@ See [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe) Install instructi
 * Install [auto-pairs](https://github.com/jiangmiao/auto-pairs)
 * Install [vim-plug](https://github.com/junegunn/vim-plug)
 * Enter into a vim environment and run `:PlugInstall`
-* Install [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe) by going to `~/,vim/plugged/youcompleteme` and running `./install.py` with your language support preferences
+* Install [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe) by going to `~/.vim/plugged/youcompleteme` and running `./install.py` with your language support preferences
 
 #### Auto Install
 By default will include C-family languages (C/C++/Objective-C/Objective-C++/CUDA) and Java for [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe) plugin
