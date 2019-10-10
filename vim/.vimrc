@@ -63,6 +63,9 @@ nnoremap <Leader>j <C-W>j
 nnoremap <Leader>k <C-W>k
 " Return to previous location
 nnoremap <Leader>g <C-O>
+" Toggle Goyo
+nnoremap <Leader>e :Goyo<CR>
+nnoremap <Leader>l :Goyo!<CR>
 " Make a pane full screen
 nnoremap tt :tab split<CR>
 " Navigation
